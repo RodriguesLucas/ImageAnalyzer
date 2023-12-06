@@ -84,16 +84,16 @@ if __name__ == '__main__':
         # Envia mensagens para o Telegram com base na altura calculada
         if altura <= 0:
             sendMessageTelegram('Análise da imagem impossibilitada, possivelmente está à noite!')
-            time.sleep(300)
+            #time.sleep(300)
 
         if 1 <= altura <= 100:
             sendMessageTelegram("|Altura da água normal| -> A altura atual da Galeria é: " + str(220 - altura) + " cm")
-            time.sleep(200)
+            #time.sleep(200)
 
         if 100 < altura < 200:
             sendMessageTelegram(
                 "|Altura da água está mediana| -> A altura atual da Galeria é: " + str(220 - altura) + " cm")
-            time.sleep(100)
+            #time.sleep(100)
 
         if 200 <= altura < 220:
             sendMessageTelegram(
